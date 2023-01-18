@@ -1,0 +1,89 @@
+/* DESKTOP */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.signIn {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-image: url('../assets/desktop_back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin_back {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 9;
+}
+
+.signIn_Inner {
+    flex-direction: column;
+    width: 98vw;
+    max-width: 600px;
+    text-align: center;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.signIn_Logo {
+    width: 200px;
+}
+
+.signIn_Inner p {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 26px;
+}
+
+.signIn_btn {
+    width: 350px;
+    padding: 16px 32px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.signIn_btn span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.google_btn {
+    background: white;
+    color: #181818;
+}
+
+.apple_btn {
+    background: #181818;
+    color: white;
+}
+
+.twitter_btn {
+    background: #1DA1F2;
+    color: white;
+}
+
+.facebook_btn {
+    background: #3B5998;
+    color: white;
+}

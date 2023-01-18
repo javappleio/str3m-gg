@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 6vw;
+    z-index: 9999;
+}
+
+.header_logo {
+    width: 140px;
+}
+
+.header_user {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #30F998;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}

@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import MediaQuery from 'react-responsive'
 import './App.css';
+import BottomBar from './components/bottomBar';
+import GameIndex from './components/gameIndex.js';
+import Home from './pages/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='root'>
+      <MediaQuery minWidth={768}>
+        <Home />
+      </MediaQuery>
+      <MediaQuery maxWidth={767}>
+        <GameIndex />
+        <GameIndex />
+        <BottomBar />
+      </MediaQuery>
     </div>
   );
 }

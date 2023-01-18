@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.userDiv {
+    min-height: calc(var(--vh, 1vh) * 100);
+    background-image: url('../assets/grad_bckgrnd.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.user_background {
+    height: 180px;
+    width: 102%;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: -2px;
+}
+
+.user_info {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-top: -50px;
+
+}
+
+.user_profile {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 0px 3px #30F998;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.user_info h3 {
+    color: white;
+    padding-top: 10px;
+}
+
+.user_info h6 {
+    color: white;
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.user_info p {
+    color: white;
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+}
+
+.user_friends {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 20px 10px;
+}
+
+.user_friends h6 {
+    color: white;
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: center;
+}
+
+.user_friend {
+    width: 76px;
+    height: 76px;
+    box-shadow: 0px 0px 0px 3px #30F998;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.userDiv .react-tabs__tab-list {
+    padding-top: 10px;
+    text-align: center;
+    border: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.userDiv .react-tabs__tab {
+    color: white;
+    opacity: 0.2;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.userDiv .react-tabs__tab:focus:after {
+    background: #FCCA4A;
+    height: 2px;
+}
+
+.userDiv .react-tabs__tab--selecte:focus:after {
+    background: #FCCA4A;
+    height: 2px;
+}
+
+.userDiv .react-tabs__tab--selected {
+    color: #FCCA4A;
+    opacity: 1;
+    background: transparent;
+    border: 0;
+}
+
+.react-tabs__tab-panel {
+    padding: 20px 0 60px;
+}
+
+.user_favourites {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 0 20px 10px;
+
+}
+
+.user_favourites_item {
+    position: relative;
+}
+
+.user_favourites_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 18px 12px;
+}
+
+.user_favourites_text_tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding-bottom: 12px;
+
+}
+
+.user_favourites_text h6 {
+    font-weight: 400;
+    padding-top: 2px;
+}
+
+.user_favourites_text_tabs small {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(255,255,255,0.3);
+    padding: 4px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.user_favourites_img {
+    width: 60vw;
+}
+
+.user_comingsoon {
+    position: relative;
+    width: 100%;
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_comingsoon h4 {
+    color: white;
+    padding-bottom: 1vh;
+    z-index: 5;
+    text-align: center;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.user_favourites_comingsoon {
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}
+
+
+
+
+/* DESKTOP */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.user_D_Div {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/desktop_back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    padding: 0 6vw;
+}
+
+.user_D_background {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.user_D_ProfileDiv { 
+    grid-area: 2 / 1 / 4 / 3;
+    text-align: center;
+}
+
+.user_D_ProfileDiv h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+}
+
+.user_D_ProfileDiv small {
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+}
+
+.user_D_ProfileDiv p {
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+.user_D_profile {
+    height: 100px;
+    width: 100px;
+    border: 4px solid #30F998;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.user_D_FriendsDiv { 
+    grid-area: 4 / 1 / 6 / 3;
+    text-align: center;
+}
+
+.user_D_FriendsDiv h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+}
+
+.user_D_FriendsDiv_Row {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 16px;
+}
+
+.user_D_FriendsDiv_Row_Div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.user_D_FriendsDiv_Row_Div small {
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+}
+
+.user_D_FriendsDiv_Row_Div img {
+    height: 60px;
+    width: 60px;
+    border: 0.5px solid #30F998;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+}
+
+.user_D_DashDiv { 
+    grid-area: 2 / 3 / 6 / 7;
+    padding: 30px 0 30px 30px;
+}
+
+.user_D_DashDiv h2 {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+}
+
+.user_D_DashDiv_Carousel {
+    padding-top: 20px;
+}
+
+.user_D_DashDiv_SplideDiv {
+    width: 22vw;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.user_D_DashDiv_SplideDiv h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.user_D_DashDiv_SplideDiv h4 {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.user_D_DashDiv_SplideDiv_Tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_D_DashDiv_SplideDiv_Tag {
+    font-weight: 400;
+    font-size: 10px;
+    padding: 5px 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 23.9937px;
+    letter-spacing: 0.6px;
+}
+
+.user_D_DashDiv_Activity {
+    padding-top: 30px;
+}
+
+.user_D_DashDiv_ActivityRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.user_D_DashDiv_ActivityRow_Div {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    padding: 16px 22px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.user_D_DashDiv_ActivityRow_Div img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+}
+
+.user_D_DashDiv_ActivityRow_Div_Right h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user_D_DashDiv_ActivityRow_Div_Right p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.user_D_DashDiv_ActivityRow_Div b {
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    color: #FFB800;
+}

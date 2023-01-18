@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.Home {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/home_prueba.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.Home_Inner {
+    padding: 0 18vw 6vh;
+}
+
+.Home_Studio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+    padding-bottom: 15px;
+}
+
+.Home_Studio img {
+    height: 40px;
+    width: 40px;
+}
+
+.Home_Studio p {
+    font-weight: 500 !important;
+    font-size: 16px !important;
+}
+
+.Home_Inner h2 {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+}
+
+.Home_Inner p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.Home_Tags {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.Home_Tags p {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 35px;
+}
+
+.Home_Bottom {
+    width: 100%;
+    padding: 0 6vw;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 6vw;
+}
+
+.Home_Bottom_Nav {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.Home_Bottom_Friends {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Home_Bottom_Friends_Up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.Home_Bottom_Friends_Up p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Home_Bottom_Friends_Down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.Home_Bottom_Friends_Down img {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #30F998;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.Home_Play_Div {
+    width: 100%;
+    text-align: right;
+}
+
+.Home_Play {
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+    padding: 20px 30px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: 0;
+}
+
+.Home_Bottom_Friends_Down_Div {
+    text-align: center;
+}
+
+.Home_Bottom_Friends_Down_Div small{
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    opacity: 0.8;
+}
