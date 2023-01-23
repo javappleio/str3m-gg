@@ -1,9 +1,10 @@
 import React from 'react';
 import MediaQuery from 'react-responsive'
 import './App.css';
+import Home from './pages/Home';
+import OnBoard from './pages/OnBoard';
 import BottomBar from './components/bottomBar';
 import GameIndex from './components/gameIndex.js';
-import Home from './pages/Home';
 
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
         <Home />
       </MediaQuery>
       <MediaQuery maxWidth={767}>
+        <OnBoard />
         <GameIndex />
         <GameIndex />
-        <BottomBar />
+        <BottomBar /> 
       </MediaQuery>
     </div>
   );

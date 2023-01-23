@@ -41,7 +41,7 @@ function User() {
     })
 
     const logOut = () => {
-        localStorage.clear()
+        localStorage.removeItem("uid")
         navigate('/')
     }
 

@@ -1,0 +1,97 @@
+.onboard_div {
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url('../assets/grad_bckgrnd.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.onboard_div_disabled {
+    display: none;
+}
+
+.onboard_inner {
+    position: absolute;
+    width: 100%;
+    min-height: calc(var(--vh, 1vh) * 100);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.ob_active {
+    display: flex;
+}
+
+.ob_image {
+    width: 70vw;
+    padding-bottom: 10vh;
+}
+
+.onboard_bottom {
+    height: 30vh;
+    background: #0A0A0C;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 30px 46px;
+    color: white;
+    text-align: center;
+}
+
+.onboard_bottom h2 {
+    font-size: 35px;
+    line-height: 100%;
+}
+
+.onboard_bottom p {
+    font-size: 16px;
+    line-height: 130%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.onboard_button {
+    height: 62px;
+    width: 62px;
+    background: linear-gradient(91.32deg, #642B73 0%, #C6426E 100%);
+    border-radius: 84px;
+    border: none;
+    color: white;
+    position: relative;
+}
+
+.ob_svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+#ob_one {
+    z-index: 10;
+}
+
+#ob_two {
+    z-index: 9;
+}
+
+#ob_three {
+    z-index: 8;
+}
+
+#ob_four {
+    z-index: 7;
+}
