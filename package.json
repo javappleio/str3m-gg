@@ -2,6 +2,7 @@
   "name": "str3m-gg",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://javapple.io/str3mreact/",
   "dependencies": {
     "@babel/helper-builder-react-jsx": "^7.19.0",
     "@splidejs/react-splide": "^0.7.12",
